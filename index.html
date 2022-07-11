@@ -49,7 +49,15 @@
 		   	<a id="240p_down_url" class="partdditem down-icon" href="javascript:void(0);" target="_top" download="240p"></a>
 		   </div>
 	</div>
-	<div id="player_div"></div>
+
+<p id="240"></p>
+
+<script>
+const element = document.getElementById("240p_down_url"); 
+let text = element.getAttribute("href"); 
+document.getElementById("240").innerHTML = text;
+</script>
+	<!--<div id="player_div"></div>-->
 	<script src="assets/js/player.js"></script>
 </body>
 </html>
