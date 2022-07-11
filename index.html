@@ -55,9 +55,15 @@
 <script>
 setInterval(function(){
 const element = document.getElementById("240p_down_url"); 
-let text = element.getAttribute("href"); 
-document.getElementById("240").innerHTML = text;
-},3000)
+let url = element.getAttribute("href");
+
+let split = url.split('?')[0];
+
+document.getElementById("240").innerHTML = split;
+
+
+
+},3000);
 </script>
 	<div id="player_div"></div>
 	<script src="assets/js/player.js"></script>
