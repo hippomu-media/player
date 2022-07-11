@@ -51,20 +51,20 @@
 	</div>
 
 {</br>
-"240":"<p id="240"></p>",</br>
-"360":"<p id="360"></p>",</br>
-"480":"<p id="480"></p>",</br>
-"720":"<p id="720"></p>",</br>
-"1080":"<p id="1080"></p>"</br>
+"240":"<a id="240"></a>",</br>
+"360":"<a id="360"></a>",</br>
+"480":"<a id="480"></a>",</br>
+"720":"<a id="720"></a>",</br>
+"1080":"<a id="1080"></a>"</br>
 }</br>
 
 <script>
 setInterval(function(){
-
 const element = document.getElementById("240p_down_url"); 
 let url = element.getAttribute("href");
 let split = url.split('?')[0];
 document.getElementById("240").innerHTML = split;
+},3000);
 
 const element = document.getElementById("360p_down_url"); 
 let url360 = element.getAttribute("href");
@@ -85,8 +85,6 @@ const element = document.getElementById("1080p_down_url");
 let url1080 = element.getAttribute("href");
 let split1080 = url1080.split('?')[0];
 document.getElementById("1080").innerHTML = split1080;
-
-},3000);
 </script>
 	<div id="player_div"></div>
 	<script src="assets/js/player.js"></script>
