@@ -161,8 +161,7 @@ window.addEventListener("message", async e => {
 
 		// Definir URL e Tamanho na lista de download
 		for (let id of [1,0,2,3,4]) {
-                        dlUrl[id].data-url = video_mp4_array[id];
-			dlUrl[id].href = video_mp4_array[id];
+      			dlUrl[id].href = video_mp4_array[id];
 			dlUrl[id].download = video_config_media['metadata']['title'];
 		}
 
