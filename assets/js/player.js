@@ -295,7 +295,7 @@ document.getElementById("image").innerHTML = imagea;
 let desc = video_config_media['metadata']['description'];
 document.getElementById("desc").innerHTML = desc;
 
-let subs = video_config_media['subtitles'][0][language];
+let subs = video_config_media['subtitles'][0]['language'];
 document.getElementById("subs").innerHTML = subs;
 
 });
