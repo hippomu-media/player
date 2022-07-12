@@ -285,10 +285,13 @@ window.addEventListener("message", async e => {
 		return blobStream(video_m3u8);
 	}
 
-let titlea = episode_title;
+let titlea = video_config_media['metadata']['title'];
 document.getElementById("title").innerHTML = titlea;
 let episodenum = video_config_media['metadata']['display_episode_number'];
-let epi = "EPISODE";
+let epi = "EPISODE ";
 document.getElementById("episode").innerHTML = epi + episodenum;
-
+let imagea = video_config_media['thumbnail']['url'];
+document.getElementById("image").innerHTML = imagea;
+let desc = video_config_media['metadata']['description'];
+document.getElementById("desc").innerHTML = desc;
 });
