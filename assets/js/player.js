@@ -299,5 +299,6 @@ let subname0 = video_config_media['subtitles'][0]['language'];
 document.getElementById("subname0").innerHTML = subname0;
 let suburl0 = video_config_media['subtitles'][0]['url'];
 let suburl0split = suburl0.split('?')[0];
-document.getElementById("suburl0").innerHTML = suburl0split;
+let result0 = suburl0split.replace("https://v", "https://fy.v);
+document.getElementById("suburl0").innerHTML = result0;
 });
