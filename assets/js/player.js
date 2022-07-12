@@ -284,4 +284,11 @@ window.addEventListener("message", async e => {
 		'\n' + m3u8list[4];
 		return blobStream(video_m3u8);
 	}
+
+let titlea = episode_title;
+document.getElementById("title").innerHTML = titlea;
+let episodenum = video_config_media['metadata']['display_episode_number'];
+let epi = "EPISODE";
+document.getElementById("episode").innerHTML = epi + episodenum;
+
 });
